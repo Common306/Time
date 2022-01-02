@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+}
+
+body {
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: VPSSonLaHoa;
+    src: url(../icon/VPSSOLAH.TTF);
+}
+
+@font-face {
+    font-family: clockicons;
+    src: url(../icon/clockicons.ttf)
+}
+
+#overlayMobile,
+#overlayEdit,
+#overlayNotice {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    transition: 0.5s;
+}
+
+.fontTime {
+    font-family: clockicons, sans-serif;
+}
+
+.fontDate {
+    font-family: VPSSonLaHoa, sans-serif;
+}
+
+.button {
+    min-width: 90px;
+    padding: 10px 15px;
+    color: #fff;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+    border: none;
+    display: inline-block;
+}
+
+.button:hover,
+.buttonSecond:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.buttonSecond {
+    padding: 12px 16px;
+    background-color: #efefef;
+    border: none;
+}
+
+.buttonColor1 {
+    background-color: #4aae71;
+}
+
+.buttonColor2 {
+    background-color: #0090dd;
+}
+
+.buttonColor3 {
+    background-color: #fbad10;
+}
+
+.buttonColor4 {
+    background-color: #ef6262;
+}
+
+.color0 {
+    color: #000000 !important;
+}
+
+.color1 {
+    color: #ffffff !important;
+}
+
+.color2 {
+    color: #ff9500 !important;
+}
+
+.color3 {
+    color: #d32f2f !important;
+}
+
+.color4 {
+    color: #388E3C !important;
+}
+
+.color5 {
+    color: #1976d2 !important;
+}
+
+.color6 {
+    color: #555555 !important;
+}
+
+.backgroundColor1 {
+    background-color: #ffffff !important;
+}
+
+.backgroundColor2 {
+    background-color: #ff9500 !important;
+}
+
+.backgroundColor3 {
+    background-color: #d32f2f !important;
+}
+
+.backgroundColor4 {
+    background-color: #388E3C !important;
+}
+
+.backgroundColor5 {
+    background-color: #1976d2 !important;
+}
+
+.icon {
+    padding: 0 5px;
+    font-size: 1.6rem;
+}
+
+.iconHover:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.iconFont23 {
+    font-size: 2.3rem;
+    margin: auto 5px;
+}
+
+.iconFont28 {
+    font-size: 2.6rem;
+    margin: auto 0;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.textPrimary {
+    font-size: 1.7rem;
+}
+
+.textSecond {
+    font-size: 1.6rem;
+}
+
+.textThird {
+    font-size: 1.4rem;
+}
+
+.margin10 {
+    margin-top: 10px;
+}
+
+.margin20 {
+    margin-top: 20px;
+}
+
+.margin30 {
+    margin-top: 30px;
+}
+
+[class*=" ci-"],
+[class^=ci-] {
+    font-family: clockicons!important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ci-angle-down:before {
+    content: "\e688";
+}
+
+.ci-contrast::before {
+    content: "\f275";
+}
+
+.ci-config::before {
+    content: "\e666";
+}
+
+.ci-alarm::before {
+    content: "\e67e";
+}
+
+.ci-timer:before {
+    content: "\e60b";
+}
+
+.ci-stopwatch:before {
+    content: "\e610";
+}
+
+.ci-clock:before {
+    content: "\e66b";
+}
+
+.ci-share:before {
+    content: "\e616";
+}
+
+.ci-less:before {
+    content: "\e644";
+}
+
+.ci-plus2:before {
+    content: "\e623";
+}
+
+.ci-expand1:before {
+    content: "\e657";
+}
+
+.ci-collapse:before {
+    content: "\e904";
+}
+
+.ci-close:before {
+    content: "\e680";
+}
+
+.ci-arrow-left:before {
+    content: "\f3d2";
+}
+
+.ci-arrow-right:before {
+    content: "\f3d3";
+}
+
+.ci-play-outline:before {
+    content: "\f487";
+}
+
+.ci-pause-outline:before {
+    content: "\f477";
+}
+
+.ci-circle:before {
+    content: "\f21b";
+}
+
+.ci-checkmark-outline:before {
+    content: "\f3fe";
+}
+
+.ci-more:before {
+    content: "\e632";
+}
+
+.ci-monitor:before {
+    content: "\e634";
+}
+
+.ci-menu3:before {
+    content: "\e6cc";
+}
+
+.margin0auto {
+    margin: 0 auto;
+}

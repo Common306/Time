@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styleGlobal.css">
+    <link rel="stylesheet" href="./css/styleForAll.css">
+    <link rel="stylesheet" href="./css/styleTime.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <title>Time Now</title>
+</head>
+
+<body>
+
+    <div id="overlayMobile">
+    </div>
+
+    <div id="heading">
+        <a href="#">
+            <img src="./img/logoImg.png" alt="" id="headingLogo">
+        </a>
+        <div id="headingRight">
+            <ul class="textPrimary">
+                <li class="headingRightItem">
+                    <a href="#">
+                        Holidays
+                    </a>
+                </li>
+                <li class="headingRightItem dFlex">
+                    Tools
+                    <i class="icon ci-angle-down iconFont28"></i>
+                    <ul id="toolList">
+                        <li>
+                            <a href="./html/alarm.html">Alarm Clock</a>
+                        </li>
+                        <li>
+                            <a href="./html/timer.html">Timer</a>
+                        </li>
+                        <li>
+                            <a href="./html/stopWatch.html">Stopwatch</a>
+                        </li>
+                        <li>
+                            <a href="./html/time.html">Clock</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="headingRightItem dFlex">
+                    <i class="icon ci-contrast iconFont28 iconHover"></i>
+                </li>
+                <li class="headingRightItem dFlex">
+                    <i class="icon ci-config iconFont28 iconHover"></i>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div id="setting">
+        <p class="textPrimary">Settings</p>
+        <div class="margin20"></div>
+        <div class="line"></div>
+        <div class="margin30"></div>
+
+        <div class="settingOption">
+            <p class="textSecond">Digital Font</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingOption">
+            <p class="textSecond">12 Hours (AM/PM)</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingOption">
+            <p class="textSecond">Show Date</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingOption">
+            <p class="textSecond">Night Mode</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingColor">
+            <p class="textSecond">Colors</p>
+            <div id="colorList">
+                <i class="ci-circle color1"></i>
+                <i class="ci-circle ci-checkmark-outline color2"></i>
+                <i class="ci-circle color3"></i>
+                <i class="ci-circle color4"></i>
+                <i class="ci-circle color5"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="navigation">
+        <ul>
+            <li class="navigationItem">
+                <a href="./html/alarm.html">
+                    <i class="icon ci-alarm navIcon"></i>
+                    <p class="textThird">Alarm Clock</p>
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a href="./html/timer.html">
+                    <i class="icon ci-timer navIcon"></i>
+                    <p class="textThird">Timer</p>
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a href="./html/stopWatch.html">
+                    <i class="icon ci-stopwatch navIcon"></i>
+                    <p class="textThird">Stopwatch</p>
+                </a>
+            </li>
+            <li class="navigationItem navActive">
+                <a href="./html/time.html">
+                    <i class="icon ci-clock navIcon"></i>
+                    <p class="textThird">Time</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="headingMobile">
+        <i class="fas fa-bars icon iconFont28 iconHover" id="iconOpenBar"></i>
+        <p class="textPrimary">Online Alarm Clock</p>
+        <i class="icon ci-config iconFont28 iconHover"></i>
+    </div>
+
+    <div id="navigationMobile">
+
+        <div class="navigationMobileChild">
+            <img src="./img/logoImg.png" alt="" id="navigationMobileLogo">
+            <i class="ci-close icon iconFont28 iconHover" id="iconCloseNavigationMobile"></i>
+        </div>
+
+        <a href="./html/alarm.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-alarm iconFont28"></i>
+            <p class="textPrimary">Alarm Clock</p>
+        </a>
+
+        <a href="./html/timer.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-timer iconFont28"></i>
+            <p class="textPrimary">Timer</p>
+        </a>
+
+        <a href="./html/stopWatch.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-stopwatch iconFont28"></i>
+            <p class="textPrimary">Stopwatch</p>
+        </a>
+
+        <a href="./html/time.html" class="navigationMobileChild navigationMobileHover navigationMobileActive">
+            <i class="icon ci-clock iconFont28"></i>
+            <p class="textPrimary">Time</p>
+        </a>
+
+    </div>
+
+    <div id="alarmContainer">
+
+        <div class="tools">
+            <i class="ci-share icon iconFont28 iconHover"></i>
+            <i class="ci-less icon iconFont28 iconHover"></i>
+            <i class="ci-plus2 icon iconFont28 iconHover"></i>
+            <i class="ci-expand1 icon iconFont28 iconHover" id="iconFullScreen"></i>
+        </div>
+
+        <div class="alarmContainerTime color2">
+            <div class="alarmContainerHour fontTime">00:00:00</div>
+            <div class="alarmContainerDate fontDate">000 - 000 00. 0000</div>
+        </div>
+
+    </div>
+
+    <div id="timeListCountry" class="row color2">
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">NewYork</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="newyork">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">London</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="london">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">Singapore</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="singapore">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">Tokyo</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="tokyo">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">Korea</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="korea">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">Hawaii</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="hawaii">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">Sydney</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="sydney">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+        <div class="col l-3 m-4 s-12 ">
+            <div class="timeCountryHeading dFlex">
+                <p class="textPrimary">Manila</p>
+                <i class="icon ci-monitor iconFont23"></i>
+                <i class="icon ci-menu3 iconFont23"></i>
+            </div>
+            <div class="timeCountryBody" id="manila">
+                <div class="timeCountryBodyTime fontTime">00:00:00</div>
+                <div class="timeCountryBodyDate fontDate">00-00-0000, -00H</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/time.js"></script>
+</body>
+
+</html>

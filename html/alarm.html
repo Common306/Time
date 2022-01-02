@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/styleGlobal.css">
+    <link rel="stylesheet" href="../css/styleForAll.css">
+    <link rel="stylesheet" href="../css/styleAlarm.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+
+    <div id="overlayEdit">
+    </div>
+
+    <div id="overlayNotice">
+    </div>
+
+    <div id="overlayMobile">
+    </div>
+
+    <div id="heading">
+        <a href="#">
+            <img src="../img/logoImg.png" alt="" id="headingLogo">
+        </a>
+        <div id="headingRight">
+            <ul class="textPrimary">
+                <li class="headingRightItem">
+                    <a href="#">
+                        Holidays
+                    </a>
+                </li>
+                <li class="headingRightItem dFlex">
+                    Tools
+                    <i class="icon ci-angle-down iconFont28"></i>
+                    <ul id="toolList">
+                        <li>
+                            <a href="./alarm.html">Alarm Clock</a>
+                        </li>
+                        <li>
+                            <a href="./timer.html">Timer</a>
+                        </li>
+                        <li>
+                            <a href="./stopWatch.html">Stopwatch</a>
+                        </li>
+                        <li>
+                            <a href="./time.html">Clock</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="headingRightItem dFlex">
+                    <i class="icon ci-contrast iconFont28 iconHover"></i>
+                </li>
+                <li class="headingRightItem dFlex">
+                    <i class="icon ci-config iconFont28 iconHover"></i>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div id="setting">
+        <p class="textPrimary">Settings</p>
+        <div class="margin20"></div>
+        <div class="line"></div>
+        <div class="margin30"></div>
+
+        <div class="settingOption">
+            <p class="textSecond">Digital Font</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingOption">
+            <p class="textSecond">12 Hours (AM/PM)</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingOption">
+            <p class="textSecond">Show Date</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingOption">
+            <p class="textSecond">Night Mode</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingColor">
+            <p class="textSecond">Colors</p>
+            <div id="colorList">
+                <i class="ci-circle color1"></i>
+                <i class="ci-circle ci-checkmark-outline color2"></i>
+                <i class="ci-circle color3"></i>
+                <i class="ci-circle color4"></i>
+                <i class="ci-circle color5"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="navigation">
+        <ul>
+            <li class="navigationItem navActive">
+                <a href="./alarm.html">
+                    <i class="icon ci-alarm navIcon"></i>
+                    <p class="textThird">Alarm Clock</p>
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a href="./timer.html">
+                    <i class="icon ci-timer navIcon"></i>
+                    <p class="textThird">Timer</p>
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a href="./stopWatch.html">
+                    <i class="icon ci-stopwatch navIcon"></i>
+                    <p class="textThird">Stopwatch</p>
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a href="./time.html">
+                    <i class="icon ci-clock navIcon"></i>
+                    <p class="textThird">Time</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="headingMobile">
+        <i class="fas fa-bars icon iconFont28 iconHover" id="iconOpenBar"></i>
+        <p class="textPrimary">Online Alarm Clock</p>
+        <i class="icon ci-config iconFont28 iconHover"></i>
+    </div>
+
+    <div id="navigationMobile">
+
+        <div class="navigationMobileChild">
+            <img src="../img/logoImg.png" alt="" id="navigationMobileLogo">
+            <i class="ci-close icon iconFont28 iconHover" id="iconCloseNavigationMobile"></i>
+        </div>
+
+        <a href="./alarm.html" class="navigationMobileChild navigationMobileHover navigationMobileActive">
+            <i class="icon ci-alarm iconFont28"></i>
+            <p class="textPrimary">Alarm Clock</p>
+        </a>
+
+        <a href="./timer.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-timer iconFont28"></i>
+            <p class="textPrimary">Timer</p>
+        </a>
+
+        <a href="./stopWatch.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-stopwatch iconFont28"></i>
+            <p class="textPrimary">Stopwatch</p>
+        </a>
+
+        <a href="./time.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-clock iconFont28"></i>
+            <p class="textPrimary">Time</p>
+        </a>
+
+    </div>
+
+    <div id="alarmContainer">
+
+        <div class="tools">
+            <i class="ci-share icon iconFont28 iconHover"></i>
+            <i class="ci-less icon iconFont28 iconHover"></i>
+            <i class="ci-plus2 icon iconFont28 iconHover"></i>
+            <i class="ci-expand1 icon iconFont28 iconHover" id="iconFullScreen"></i>
+        </div>
+
+        <div class="alarmContainerTime color2">
+            <div class="alarmContainerHour fontTime">00:00:00</div>
+            <div class="alarmContainerDate fontDate">000 - 000 00. 0000</div>
+            <div id="btnSetAlarm" class="button buttonColor1">Set Alarm</div>
+        </div>
+
+        <div class="alarmContainerNotice color2">
+            <p class="alarmContainerTitleNotice margin0auto">Alarm</p>
+            <div class="alarmContainerTimeSet margin0auto">
+                <i class="icon ci-alarm navIcon margin0auto"></i>
+                <p id="timeAlarm" class="alarmContainerTimeText fontTime margin0auto">00:00</p>
+            </div>
+            <div class="alarmContainerTimeSet margin0auto">
+                <i class="icon ci-timer iconFont23"></i>
+                <span class="alarmContainerTimeCount fontTime">00:00:00</span>
+            </div>
+            <button id="btnStopAlarm" class="button buttonColor4 margin0auto" style="width: 100px">Stop Alarm</button>
+        </div>
+    </div>
+
+    <div id="editAlarm">
+        <div class="modalHeader">
+            <p class="modalTitle">Edit Alarm</p>
+            <i class="ci-close icon iconFont28 iconHover" id="iconClose"></i>
+        </div>
+        <div class="modalBody">
+            <div class="row">
+                <div class="col l-6 m-6 s-12">
+                    <p class="textSecond">Hours</p>
+                    <div class="margin10"></div>
+                    <div class="inputGroup">
+                        <button class="buttonSecond" id="btnDecreaseHour">
+                            <i class="ci-arrow-left icon"></i>
+                        </button>
+                        <select name="" id="setHour" class="formSelect">
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                        </select>
+                        <button class="buttonSecond" id="btnIncreaseHour">
+                            <i class="ci-arrow-right icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col l-6 m-6 s-12">
+                    <p class="textSecond">Minutes</p>
+                    <div class="margin10"></div>
+                    <div class="inputGroup">
+                        <button class="buttonSecond" id="btnDecreaseMinute">
+                            <i class="ci-arrow-left icon"></i>
+                        </button>
+                        <select name="" id="setMinute" class="formSelect">
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                        </select>
+                        <button class="buttonSecond" id="btnIncreaseMinute">
+                            <i class="ci-arrow-right icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="margin20"></div>
+            <div class="row">
+                <div class="col l-7 m-7 s-7">
+                    <p class="textSecond">Sounds</p>
+                    <div class="margin10"></div>
+                    <div class="dFlex">
+                        <select name="" id="setSound" class="formSelect">
+                            <option>Bells</option>
+                            <option>Piano</option>
+                            <option>School</option>
+                        </select>
+                        <button class="buttonSecond" id="btnPlay">
+                            <i class="ci-play-outline" id="iconPlay"></i>
+                        </button>
+                        <button class="buttonSecond" style="margin-left: 4px">
+                            <i class="ci-more"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col l-5 m-5 s-5 repeatDiv">
+                    <div class="margin30"></div>
+                    <div class="dFlex" style="height:44px">
+                        <input type="checkbox" name="repeatSound" id="repeatSound" class="repeatSound">
+                        <label for="repeatSound" class="repeatSound">
+                            <p class="textPrimary">Repeat Sound</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="margin20"></div>
+            <div class="dFlex" style="flex-direction: column;">
+                <p class="textSecond">Title</p>
+                <div class="margin10"></div>
+                <input type="text" id="titleEdit" class="formSelect" placeholder="Alarm" value="Alarm">
+            </div>
+
+        </div>
+        <div class="modalFooter">
+            <button class="button color6" id="btnTest">Test</button>
+            <div>
+                <button class="button color6" id="buttonClose">Cancel</button>
+                <button id="btnStart" class="button buttonColor1 color1">Start</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="noticeAlarm">
+        <div class="modalHeader">
+            <p class="modalTitle">Alarm</p>
+            <i class="ci-close icon iconFont28 iconHover" id="iconCloseNotice"></i>
+        </div>
+        <div class="modalBody dFlex">
+            <div class="iCircle dFlex">
+                <i class="icon ci-alarm"></i>
+            </div>
+            <div class="margin30"></div>
+            <div id="titleNotice" class="modalTitle margin0auto"></div>
+            <div class="margin20"></div>
+            <div id="hourNotice" class="modalTitle margin0auto"></div>
+            <div class="margin20"></div>
+        </div>
+        <div class="modalFooter dFlex">
+            <button class="button buttonColor4 margin0auto" id="btnCloseNotice">OK</button>
+        </div>
+    </div>
+
+    <audio src="../sounds/bells.mp3"></audio>
+
+    <script src="../js/alarm.js"></script>
+</body>
+
+</html>

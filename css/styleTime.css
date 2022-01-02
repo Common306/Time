@@ -1,0 +1,52 @@
+.alarmContainerTime {
+    margin-top: 130px;
+}
+
+#timeListCountry {
+    margin-left: 100px;
+    padding: 23px 13px 23px 23px;
+}
+
+.timeCountryHeading {
+    padding: 20px;
+    background-color: #111;
+    border-bottom: 1px solid #777;
+}
+
+.timeCountryHeading .textPrimary {
+    flex: 1;
+}
+
+.timeCountryBody {
+    padding: 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.timeCountryBodyTime {
+    font-size: 3rem;
+    margin-bottom: 18px;
+}
+
+.timeCountryBodyDate {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#timeListCountry .col {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    #timeListCountry {
+        margin-left: 0;
+    }
+    #timeListCountry .col {
+        margin-bottom: 16px;
+    }
+}

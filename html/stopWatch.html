@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/styleGlobal.css">
+    <link rel="stylesheet" href="../css/styleForAll.css">
+    <link rel="stylesheet" href="../css/styleStopWatch.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <title>Stop Watch</title>
+</head>
+
+<body>
+
+    <div id="overlayMobile">
+    </div>
+
+    <div id="heading">
+        <a href="#">
+            <img src="../img/logoImg.png" alt="" id="headingLogo">
+        </a>
+        <div id="headingRight">
+            <ul class="textPrimary">
+                <li class="headingRightItem">
+                    <a href="#">
+                        Holidays
+                    </a>
+                </li>
+                <li class="headingRightItem dFlex">
+                    Tools
+                    <i class="icon ci-angle-down iconFont28"></i>
+                    <ul id="toolList">
+                        <li>
+                            <a href="./alarm.html">Alarm Clock</a>
+                        </li>
+                        <li>
+                            <a href="./timer.html">Timer</a>
+                        </li>
+                        <li>
+                            <a href="./stopWatch.html">Stopwatch</a>
+                        </li>
+                        <li>
+                            <a href="./time.html">Clock</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="headingRightItem dFlex">
+                    <i class="icon ci-contrast iconFont28 iconHover"></i>
+                </li>
+                <li class="headingRightItem dFlex">
+                    <i class="icon ci-config iconFont28 iconHover"></i>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div id="setting">
+        <p class="textPrimary">Settings</p>
+        <div class="margin20"></div>
+        <div class="line"></div>
+        <div class="margin30"></div>
+
+        <div class="settingOption">
+            <p class="textSecond">Digital Font</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingOption">
+            <p class="textSecond">Night Mode</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="settingColor">
+            <p class="textSecond">Colors</p>
+            <div id="colorList">
+                <i class="ci-circle color1"></i>
+                <i class="ci-circle ci-checkmark-outline color2"></i>
+                <i class="ci-circle color3"></i>
+                <i class="ci-circle color4"></i>
+                <i class="ci-circle color5"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="navigation">
+        <ul>
+            <li class="navigationItem">
+                <a href="./alarm.html">
+                    <i class="icon ci-alarm navIcon"></i>
+                    <p class="textThird">Alarm Clock</p>
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a href="./timer.html">
+                    <i class="icon ci-timer navIcon"></i>
+                    <p class="textThird">Timer</p>
+                </a>
+            </li>
+            <li class="navigationItem navActive">
+                <a href="./stopWatch.html">
+                    <i class="icon ci-stopwatch navIcon"></i>
+                    <p class="textThird">Stopwatch</p>
+                </a>
+            </li>
+            <li class="navigationItem">
+                <a href="./time.html">
+                    <i class="icon ci-clock navIcon"></i>
+                    <p class="textThird">Time</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="headingMobile">
+        <i class="fas fa-bars icon iconFont28 iconHover" id="iconOpenBar"></i>
+        <p class="textPrimary">Online Alarm Clock</p>
+        <i class="icon ci-config iconFont28 iconHover"></i>
+    </div>
+
+    <div id="navigationMobile">
+
+        <div class="navigationMobileChild">
+            <img src="../img/logoImg.png" alt="" id="navigationMobileLogo">
+            <i class="ci-close icon iconFont28 iconHover" id="iconCloseNavigationMobile"></i>
+        </div>
+
+        <a href="./alarm.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-alarm iconFont28"></i>
+            <p class="textPrimary">Alarm Clock</p>
+        </a>
+
+        <a href="./timer.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-timer iconFont28"></i>
+            <p class="textPrimary">Timer</p>
+        </a>
+
+        <a href="./stopWatch.html" class="navigationMobileChild navigationMobileHover navigationMobileActive">
+            <i class="icon ci-stopwatch iconFont28"></i>
+            <p class="textPrimary">Stopwatch</p>
+        </a>
+
+        <a href="./time.html" class="navigationMobileChild navigationMobileHover">
+            <i class="icon ci-clock iconFont28"></i>
+            <p class="textPrimary">Time</p>
+        </a>
+
+    </div>
+
+    <div id="alarmContainer">
+
+        <div class="tools">
+            <i class="ci-share icon iconFont28 iconHover"></i>
+            <i class="ci-less icon iconFont28 iconHover"></i>
+            <i class="ci-plus2 icon iconFont28 iconHover"></i>
+            <i class="ci-expand1 icon iconFont28 iconHover" id="iconFullScreen"></i>
+        </div>
+
+        <div class="alarmContainerTime color2">
+            <div class="timeCount fontTime">
+                <span id="minute">00</span>:<span id="second">00</span>.<span id="milisecond">00</span>
+            </div>
+            <button id="btnReset" class="button buttonColor3">Reset</button>
+            <button id="btnStart" class="button buttonColor1">Start</button>
+        </div>
+
+        <table class="timeLap color2">
+            <thead id="headerListLap" class="fontDate">
+            </thead>
+            <tbody id="listLap" class="fontTime">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="../js/stopwatch.js"></script>
+</body>
+
+</html>

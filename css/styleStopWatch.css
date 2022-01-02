@@ -1,0 +1,53 @@
+.timeCount {
+    font-size: 12.8rem;
+    margin-bottom: 30px;
+}
+
+.timeCount #milisecond {
+    font-size: 8.8rem;
+}
+
+.timeLap {
+    margin: 20px auto;
+}
+
+.timeLap thead th {
+    padding: 15px 20px;
+    font-size: 2.6rem;
+}
+
+.timeLap tbody tr td {
+    padding: 7px 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .timeCount {
+        font-size: 9.8rem;
+    }
+    .timeCount #milisecond {
+        font-size: 6.8rem;
+    }
+    .timeLap thead th {
+        font-size: 2rem;
+    }
+    .timeLap tbody tr td {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 739px) {
+    .timeCount {
+        font-size: 5.8rem;
+    }
+    .timeCount #milisecond {
+        font-size: 3.8rem;
+    }
+    .timeLap thead th {
+        font-size: 1.5rem;
+    }
+    .timeLap tbody tr td {
+        font-size: 1rem;
+    }
+}
